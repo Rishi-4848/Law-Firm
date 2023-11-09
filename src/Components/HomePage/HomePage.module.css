@@ -1,0 +1,50 @@
+.heroContainer{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.title{
+  width: 570px;
+  height: 194px;
+  font-weight: 500;
+  line-height: 60px;
+  font-size: 30px;
+}
+
+.about{
+  width: 560px;
+  height: 99px;
+  color: #969493;
+}
+
+.button{
+  width: 140px;
+  height: 62px;
+  background-color: #E3B748;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mailContainer{
+  width: 440px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid var(--color-black);
+  border-radius: 30px;
+  background-color: var(--color-white);
+}
+
+.mailInput{
+  border: none;
+  height: 50px;
+  width: 200px;
+ outline: none;
+  border-radius: 20px;
+}

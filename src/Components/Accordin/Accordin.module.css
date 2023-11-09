@@ -1,0 +1,9 @@
+.wrapper:hover{
+  background-color:var(--color-primary);
+
+}
+
+.wrapper{
+  min-width: 400px;
+  margin-left: 10px;
+}

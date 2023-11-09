@@ -1,0 +1,25 @@
+.swiperContainer{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title{
+  margin-left: 10vw;
+  width: 375px;
+  font-weight: 600;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.cardContainer{
+  display: flex;
+  gap: 10vw;
+  flex-wrap: wrap;
+}
+
+.teamContainer{
+  margin-left: 10vw;
+  margin-bottom: 10vw;
+}
+

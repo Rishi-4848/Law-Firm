@@ -1,0 +1,19 @@
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10vw;
+  gap: 2vw;
+}
+
+.button{
+  width: 100px;
+  height: 40px;
+  background-color: #E3B748;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-left: 50px;
+}

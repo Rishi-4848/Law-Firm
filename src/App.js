@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { useState } from 'react';
+import styles from'./App.css';
+import AboutPage from './Components/AboutPage/AboutPage';
+import AttorneyPage from './Components/AttorneysPage/AttorneyPage';
+import ContactPage from './Components/ContactPage/ContactPage';
+import FaqSection from './Components/FaqSection/FaqSection';
+import Footer from './Components/Footer/Footer';
+import HomePage from './Components/HomePage/HomePage';
+import Navbar from './Components/NavBar/Navbar';
+import PracticePage from './Components/PracticePage/PracticePage';
+import {Route,Routes} from "react-router-dom";
+import Thanks from './Components/ThanksPage/Thanks';
 
 function App() {
+  const [ contact,setContact] = useState(false)
+  const [name,setName] = useState("");
+  const [mail,setMail] = useState("");
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+     
+        <Navbar setContact={setContact} />
+        <Routes>
+          <Route exact path='/'  element={<HomePage setContact= {setContact} />}/>
+        
+          <Route path='/attorney' element={<AttorneyPage />}/>
+       
+          <Route path='/practice' element={<PracticePage />}/>
+      
+          <Route path='/about' element={<AboutPage />}/>
+
+          <Route path='/thanks' element={<Thanks name={name} mail={mail} />}/>
+        </Routes>
+        <FaqSection/>
+        <Footer/>
+        {contact === true ? (<ContactPage nameProp = {setName} mailProp={setMail} setContact={setContact} />):(null)}
+       
     </div>
   );
 }

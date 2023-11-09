@@ -1,0 +1,26 @@
+.wrapper{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.subdiv{
+   display: flex;
+  align-items: center;
+  
+}
+
+.button{
+  border: 1px solid  var(--color-white);
+  width: 170px;
+  height: 45px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-left: 200px;
+}
+
